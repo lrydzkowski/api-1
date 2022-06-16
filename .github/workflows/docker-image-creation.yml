@@ -55,4 +55,4 @@ jobs:
           context: .
           file: ./Api1.WebApi/Dockerfile
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.APP_IMAGE_NAME }}:latest,${{ env.REGISTRY }}/${{ env.APP_IMAGE_NAME }}:${{ env.GITHUB_RUN_ID }}
+          tags: ${{ env.REGISTRY }}/${{ env.APP_IMAGE_NAME }}:latest,${{ env.REGISTRY }}/${{ env.APP_IMAGE_NAME }}:${{ github.run_id }}
