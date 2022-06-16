@@ -9,6 +9,6 @@ public class AppController : ControllerBase
     [Route("app")]
     public IActionResult GetAppInfo()
     {
-        return Ok(new { Version = "1.0.0", Name = "Api1" });
+        return Ok(new { Version = "1.0.0-preview.3", Name = "Api1" });
     }
 }
